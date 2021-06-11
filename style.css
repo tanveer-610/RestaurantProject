@@ -1,0 +1,330 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+.row{
+    width: 100%;
+}
+
+
+.row::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+[class*="col-"]{
+    width: 100%;
+    float: left;
+    padding: 15px;
+}
+/* header starts */
+header{
+    background-color: rgb(96, 154, 158);
+    text-align: center;
+    padding: 0% 1%;
+}
+.navLogo{
+    line-height: 50px;
+    
+}
+.logo{
+    width: 80px;
+    padding: 10px;
+    border-radius: 40%;
+    border: 2px solid white;
+    
+}
+.navMenu ul li{
+    list-style-type: none;
+    text-align: center;
+    padding: 10px 20px;
+    line-height: 20px;
+    display: block;
+    font-family: 'Roboto', sans-serif;
+}
+.navMenu li a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    transition: 0.3s;
+
+}
+.navMenu li a:hover{
+    background-color: black;
+    opacity: 0.5;
+    border-radius: 10px;
+}
+/* header ends */
+/* Banner starts */
+#banner-section{
+    background-image: url("images/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    padding: 40px 40px;
+    text-align: center;
+}
+.banner h1{
+    font-size: 3rem;
+    text-align: center;
+    width: 100%;
+    background: rgb(109, 95, 77);
+    padding: 5px;
+    border-radius: 20px;
+    font-family: 'Handlee', cursive;
+    color: rgb(224, 236, 203);
+    
+}
+.banner p{
+    padding: 20px;
+    margin: 20px auto;
+    text-align: center;
+    background: rgb(51, 163, 66);
+    width: 300px;
+    
+    border-radius: 10px;
+}
+.banner button{
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+    background: rgb(51, 163, 66);
+    width: 120px;
+    height: 10vh;
+    font-weight: bold;
+    transition: 0.4s;
+}
+.banner button:hover{
+    transform: scale(1.2);
+}
+
+/* Banner ends */
+
+/* About us starts */
+#about-us{
+    padding: 1%;
+    text-align: center;
+    margin: 10px;
+}
+.aboutUsContent{
+    padding: 10px;
+}
+.aboutUsContent h3{
+    font-size: 2rem;
+    font-weight: bolder;
+    padding: 10px;
+}
+.aboutUsContent p{
+    font-size: 0.8rem;
+    font-family: 'Roboto', sans-serif;
+}
+/* About us ends */
+
+/* menu starts */
+#menu{
+    padding: 1%;
+}
+.cardBody{
+    text-align: center;
+}
+.cardBody img{
+    width: 100%;
+    height: 300px;
+    display: block;
+}
+.cardDesc{
+    text-align: center; 
+    background: rgb(94, 92, 92);
+}
+.cardDesc h3{
+    background: rgb(28, 124, 36);
+    width: 100%;
+    padding: 10px;
+    font-family: 'Handlee', cursive;
+    font-size: 1.2rem;
+}
+.cardDesc p{
+    padding: 5px;
+    font-size: 0.8rem;
+}
+.card{
+    
+    transition: 0.4s;
+}
+.card:hover{
+    transform: scale(1.1);
+    box-shadow: 1px 2px 3px 3px black;
+}
+/* menu ends */
+
+/* contact starts */
+#contact{
+    padding: 1%;
+    background: rgb(59, 78, 83);
+}
+.contactDetails{
+    text-align: center;
+    padding: 10px;
+}
+.contactDetails p,address{
+    font-size: 0.8rem;
+}
+.map{
+    width: 100%;
+    height: 250px;
+}
+/* contact starts */
+footer{
+    text-align: center;
+    padding: 1%;
+    color: white;
+    background-color: rgb(77, 58, 58);
+}
+footer p{
+    font-size: 0.8rem;
+    color: white;
+    font-weight: bolder;
+    line-height: 32px;
+}
+.media .icon{
+    color: white;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    margin: 10px;
+    line-height: 32px;
+    border: 1px solid white;
+    border-radius: 50%;
+    transition: 0.4s;
+    
+}
+.media .icon:hover{
+    transform: scale(1.2);
+    background-color: gray;
+}
+/* for small screen width 576px */
+@media (min-width: 576px) {
+    .col-sm-1 {width: 8.33%;}
+    .col-sm-2 {width: 16.66%;}
+    .col-sm-3 {width: 25%;}
+    .col-sm-4 {width: 33.33%;}
+    .col-sm-5 {width: 41.66%;}
+    .col-sm-6 {width: 50%;}
+    .col-sm-7 {width: 58.33%;}
+    .col-sm-8 {width: 66.66%;}
+    .col-sm-9 {width: 75%;}
+    .col-sm-10 {width: 83.33%;}
+    .col-sm-11 {width: 91.66%;}
+    .col-sm-12 {width: 100%;}   
+}
+/* for medium screen width 768px */
+@media (min-width: 768px) {
+    
+    .col-me-1 {width: 8.33%;}
+    .col-me-2 {width: 16.66%;}
+    .col-me-3 {width: 25%;}
+    .col-me-4 {width: 33.33%;}
+    .col-me-5 {width: 41.66%;}
+    .col-me-6 {width: 50%;}
+    .col-me-7 {width: 58.33%;}
+    .col-me-8 {width: 66.66%;}
+    .col-me-9 {width: 75%;}
+    .col-me-10 {width: 83.33%;}
+    .col-me-11 {width: 91.66%;}
+    .col-me-12 {width: 100%;}   
+}
+
+/* for medium screen width 992px */
+@media (min-width: 992px) {
+
+    .navLogo{
+        text-align: left;
+    }
+    .navMenu ul{
+        text-align: right;
+    }
+    .navMenu ul li{
+        display: inline-block;
+       
+    }
+    
+    .navMenu ul li a{
+        display: inline-block;
+        border: none;
+        padding-top: 20px;
+       transition: 0.4s;
+
+    }
+    .navMenu ul li a:hover{
+        text-decoration: underline;
+        background-color: transparent;
+        transform: scale(1.5);
+        color: black;
+        border-radius: 0;
+    }
+
+
+    /* banner starts */
+    #banner-section{
+        width: 100%;
+        height: 100vh;
+        position: relative;
+    }
+    .banner{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+    }
+    .banner h1{
+        width: 800px;
+        padding: 10px;
+        font-size: 3.5rem;
+    }
+    .banner p{
+        width: 500px;
+        font-size: 1.4rem;
+        padding: 20px;
+        
+    }
+    .banner button{
+        margin-top: 20px;
+    }
+
+
+    /* banner ends */
+
+    /* menu starts  */
+   
+    /* menu ends */
+    footer p{
+        text-align: left;
+    }
+    footer .media{
+        text-align: right;
+    }
+
+    .col-l-1 {width: 8.33%;}
+    .col-l-2 {width: 16.66%;}
+    .col-l-3 {width: 25%;}
+    .col-l-4 {width: 33.33%;}
+    .col-l-5 {width: 41.66%;}
+    .col-l-6 {width: 50%;}
+    .col-l-7 {width: 58.33%;}
+    .col-l-8 {width: 66.66%;}
+    .col-l-9 {width: 75%;}
+    .col-l-10 {width: 83.33%;}
+    .col-l-11 {width: 91.66%;}
+    .col-l-12 {width: 100%;}   
+}
